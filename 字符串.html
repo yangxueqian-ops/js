@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var str1="我是'nigger'"
+        var str2='我是"nigger"'
+        var str3="我是\"nigger\""
+        document.write(str3)
+        var str4="long\
+        long ago"
+        document.write(str4)
+        console.log(str4.length);
+        
+        var str="uictcnj"
+        console.log(str.charAt(3))
+        console.log(str.charAt(str.length-1)) // 若参数是负数或是大于字符串长度,charAt返回空字符串
+        
+        var str1="我是'nigger'"
+        var str2='你也是"nigger"'
+        var str3="!"
+        result=str1.concat(str2,str3) //不改变原字符串 (result=str1+str2+str3)
+        console.log(result);
+        //例：
+        var one=1
+        var two=2
+        var three="3"
+        console.log("".concat(one,two,three));
+        console.log(one+two+three);
+
+        var name='nigger'
+        console.log(name.substring(2,5));
+        console.log(name.substring(2));
+        console.log(name.substring(-2,5)); //负数转成0
+        console.log(name.substr(2,5)); //第二个参数为字符串长度
+        console.log(name.substr(-2));
+        console.log(name.substr(2,-3)); //负数转成0
+
+        var hello="helloworld!"
+        console.log(hello.indexOf("d"))
+        console.log(hello.indexOf("z"))
+        console.log(hello.indexOf("w",6)) //orld
+        
+        var name="  nigger  "
+        console.log(name.trim());
+        console.log(name);
+        console.log("Name:\tAlice\nAge:\t30");
+
+        var name="i|am|nigger"
+        console.log(name.split("|"));
+        console.log(name.split(""));
+        console.log(name.split("",5));
+        
+    </script>
+</body>
+</html>
